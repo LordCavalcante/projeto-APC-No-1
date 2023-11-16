@@ -1,13 +1,12 @@
+#modulos
+import re
 #universal
 linhas = input()
 texto = str(input())
 #funcoes
 def reconhecer_artista()
-artistas = ["Raimundos", "Queen", 
-"Alceu Valença", "Autoramas", 
-"When in Rome", "RPM", "Grand Funk Railroad"]
-for artistas in texto:
-	return(f"#{artistas[]}#")
+artistas = re.findall(r'"(,.;!?)"')
+
 	
 def tem_coupon():
 	coupons = ["MAISAPC", "NAODUVIDO", "RPM"]
